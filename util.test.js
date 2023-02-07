@@ -13,3 +13,8 @@ test("should output data-less text", () => {
   const text2 = generateText();
   expect(text2).toBe("undefined (undefined years old)");
 });
+
+test("should generate a valid text output", () => {
+  const text = generateText("Nat", 29);
+  expect(text).toBe("Nat (29 years old)");
+});
