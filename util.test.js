@@ -11,5 +11,5 @@ test("should output data-less text", () => {
   const text = generateText("", null);
   expect(text).toBe(" (null years old)");
   const text2 = generateText();
-  expect(text).toBe("undefined (undefined years old)");
+  expect(text2).toBe("undefined (undefined years old)");
 });
